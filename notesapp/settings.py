@@ -89,15 +89,12 @@ WSGI_APPLICATION = 'notesapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('DB_NAME', 'test_db'),
-        'USER': os.environ.get('DB_USER', 'root'),
-        'PASSWORD': os.environ.get('DB_PASSWORD', 'root'),
-        'HOST': os.environ.get('DB_HOST', 'db'),   # default to 'db'
-        'PORT': os.environ.get('DB_PORT', '3306'),
+        'ENGINE': 'djongo',
+        'NAME': 'notes_db',
+        'HOST': 'mongodb',
+        'PORT': 27017,
     }
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
