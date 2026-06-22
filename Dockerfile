@@ -2,7 +2,7 @@ FROM python:3.9
 
 WORKDIR /app/backend
 
-COPY requirements.txt /app/backend
+COPY requirements.txt /app/ackend
 
 RUN apt-get update \
     && apt-get upgrade -y \
