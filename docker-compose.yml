@@ -2,7 +2,7 @@ version: "3.8"
 services:
   mongodb:
     container_name: mongo-service
-    image: varun5291/notes-app:latest
+    image: "varun5291/notes-app:latest"
     volumes:
       - ./backend/data:/data
     ports:
